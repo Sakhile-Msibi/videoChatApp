@@ -28,4 +28,4 @@ io.on('connection', socket => {
     })
 })
 
-server.listen(PORT, () => console.log(`listening on ${PORT}`));
+server.listen(PORT, () => console.log(`listenig on ${PORT}`));
