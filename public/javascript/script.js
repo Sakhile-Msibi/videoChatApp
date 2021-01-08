@@ -1,9 +1,8 @@
 const socket = io('/');
 const videoGrid = document.getElementById('video-grid');
 const myPeer = new Peer(undefined, {
-    secure: true,
-    host: 'sleepy-ravine-81660.herokuapp.com',
-    port: '443'
+    host: 'sleepy-ravine-61660.herokuapp.com',
+    port: '3001'
 });
 const myVideo = document.createElement('video');
 myVideo.muted = true;
