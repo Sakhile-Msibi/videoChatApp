@@ -1,0 +1,115 @@
+@import url('../css/fonts.css');
+
+html, body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root{
+
+    /*colours*/
+    --text-gray: #3f4954;
+    --text-ligth: #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+
+    /*gradient colour*/
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+    /*font family*/
+    --Hanalei: 'Hanalei', cursive;
+    --Abel: 'Abel', cursive;
+    --Anton: 'Anton', cursive;
+    --Josefin: 'Josefin', cursive;
+    --Lexend: 'Lexend', cursive;
+    --Livvic: 'Livvic', cursive;
+}
+
+/*Main Content-----Start*/
+#video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-auto-rows: 300px;
+}
+
+/*site title---------about file------start*/
+
+main .site-title-about{
+    background: url(../assets/background4.jpg);
+    height: 180vh;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+main .site-title-about .site-background-about video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid blue;
+    justify-content: space-evenly;
+    margin: 0 3rem;
+}
+
+main .site-title-about .site-background-about{
+    padding-top: 5rem;
+    padding: 0 0.5rem;
+}
+
+main .site-title-about h1{
+    font-family: var(--Lexend);
+    font-size: 2.5rem;
+    margin: 0 35rem;
+    color: rgb(38, 17, 230);
+}
+
+/*Main Content-----end*/
+
+
+/*footer*/
+footer.footer{
+    height: 100%;
+    background: var(--bg-color);
+    position: relative;
+}
+
+footer.footer .container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+footer.footer .container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem 0.9rem;
+}
+
+footer.footer .container h2{
+    color: var(--white);
+}
+
+footer.footer .follow div i{
+    color: var(--white);
+    padding: 0 0.4rem;
+}
+
+footer.footer .rights{
+    justify-content: center;
+    font-family: var(--Josefin);
+}
+
+footer.footer .move-up{
+    position: absolute;
+    right: 6%;
+    top: 50%;
+}
+
+footer.footer .move-up span{
+    color: var(--midnight);
+}
+
+footer.footer .move-up span:hover{
+    color: var(--white);
+    cursor: pointer;
+}
