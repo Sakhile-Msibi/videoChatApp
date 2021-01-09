@@ -113,3 +113,16 @@ footer.footer .move-up span:hover{
     color: var(--white);
     cursor: pointer;
 }
+
+/*Viewpoint less than 520px*/
+@media only screen and (max-width: 385px) {
+    main .site-title-about h1{
+        display: none;
+    }
+
+    main .site-title-about .site-background-about video{
+        width: 95% !important;
+        height: 100% !important;
+        margin: 0 0rem !important;
+    }
+}
